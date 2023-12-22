@@ -1,12 +1,8 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Home } from "../pages/Home";
-import { ItemListContainer, NavBarComponent } from "../components";
+import { ItemListContainer, NavBarComponent,  } from "../components";
 import { ItemDetailContainer } from "../pages";
 import Category from "../pages/Category";
-
-
-
-
 
 export const MainRouter = () => {
   return (

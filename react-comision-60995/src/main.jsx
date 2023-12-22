@@ -2,7 +2,6 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 
-
 import { initializeApp } from "firebase/app";
 
 const firebaseConfig = {
@@ -13,7 +12,6 @@ const firebaseConfig = {
   messagingSenderId: "557347125294",
   appId: "1:557347125294:web:9049d4faf4609d17b547bf",
 };
-
 
 initializeApp(firebaseConfig);
 

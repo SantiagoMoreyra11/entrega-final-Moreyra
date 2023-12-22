@@ -5,10 +5,6 @@ import { CartProvider } from "./context";
 import React from "react";
 
 
-
-export const CartContext = React.createContext("");
-
-
 const App = () => {
   return (
     <div>
