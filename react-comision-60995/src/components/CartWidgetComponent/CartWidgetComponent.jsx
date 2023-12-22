@@ -13,7 +13,7 @@ const CartWidgetComponent = () => {
   return (
     <div>
       <FontAwesomeIcon style={iconStyles} icon={faCartShopping} />
-      <span style={{ fontSize: "1.3rem" }}>{itemCount}</span>
+      <span style={{ fontSize: "1.3rem", margin:"5px"}}>{itemCount}</span>
     </div>
   );
 };

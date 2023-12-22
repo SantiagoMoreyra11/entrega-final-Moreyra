@@ -4,7 +4,6 @@ import { MainRouter } from "./router/MainRouter";
 import { CartProvider } from "./context";
 import React from "react";
 
-
 const App = () => {
   return (
     <div>

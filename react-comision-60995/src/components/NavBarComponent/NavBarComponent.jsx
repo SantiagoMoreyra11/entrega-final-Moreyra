@@ -5,7 +5,7 @@ import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import CartWidgetComponent from "../CartWidgetComponent/CartWidgetComponent";
 import { Link } from "react-router-dom";
-import Cart from "../Cart/Cart";
+import CartPopup from "../CartPopup/CartPopup";
 
 export const NavBarComponent = () => {
   return (
@@ -54,7 +54,7 @@ export const NavBarComponent = () => {
             </NavDropdown>
           </Nav>
           <CartWidgetComponent />
-          <Cart />
+          <CartPopup />
         </Navbar.Collapse>
       </Container>
     </Navbar>
