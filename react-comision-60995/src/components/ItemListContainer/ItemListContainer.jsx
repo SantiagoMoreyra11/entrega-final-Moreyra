@@ -3,12 +3,9 @@ import Card from "react-bootstrap/Card";
 import React, { useContext } from "react";
 import { Link, useParams } from "react-router-dom";
 import { ItemQuantitySelector } from "../ItemQuantitySelector";
-import { AddItemButton } from "../AddItemButton";
-import { CartContext } from "../../context";
+
 
 export const ItemListContainer = ({ products }) => {
-  const { cartItems, setCartItems } = useContext(CartContext);
-
   return (
     <div
       style={{

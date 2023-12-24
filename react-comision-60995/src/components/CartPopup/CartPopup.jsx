@@ -1,26 +1,18 @@
-
-import React, { useState } from "react";
+import React from "react";
+import { Link } from "react-router-dom";
 import Cart from "../Cart/Cart";
 
-const CartPopup = () => {
-  const [showPopup, setShowPopup] = useState(false);
-  
-  const togglePopup = () => {
-    setShowPopup(!showPopup);
-  };
 
+
+const CartPopup = () => {
   return (
     <div>
-      <button className="button-Popup" onClick={togglePopup}>
+      <Link to="/cart" className="button-Popup">
         Carrito
-      </button>
-      {showPopup && (
-        <div className="cart-popup">
-          <Cart />
-        </div>
-      )}
+      </Link>
     </div>
   );
 };
+
 
 export default CartPopup;

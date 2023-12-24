@@ -4,17 +4,18 @@ import { Button } from "react-bootstrap";
 import { CartContext } from "../../context";
 
 export const AddItemButton = ({
+  title,
   quantity,
-  label = "Agregar al Carrito",
   handleResetQuantity,
   price,
+  label = "Agregar al Carrito",
 }) => {
   const { itemCount, setItemCount, cartItems, setCartItems } =
     useContext(CartContext);
 
   const handleAddCart = () => {
     setItemCount(itemCount + quantity);
-    setCartItems([...cartItems, { quantity, price,  }]);
+    setCartItems([...cartItems, { title, quantity, price }]);
     handleResetQuantity();
   };
 

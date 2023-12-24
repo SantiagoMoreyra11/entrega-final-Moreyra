@@ -6,6 +6,7 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 import CartWidgetComponent from "../CartWidgetComponent/CartWidgetComponent";
 import { Link } from "react-router-dom";
 import CartPopup from "../CartPopup/CartPopup";
+import Cart from "../Cart/Cart";
 
 export const NavBarComponent = () => {
   return (
@@ -15,7 +16,7 @@ export const NavBarComponent = () => {
           <Link to={"/"}>
             <img
               style={{ width: "5rem" }}
-              src="../../../public/img/logo.png"
+              src="../../../img/logo.png"
             ></img>
           </Link>
         </Navbar.Brand>
