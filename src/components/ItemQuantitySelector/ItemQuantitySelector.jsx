@@ -36,5 +36,6 @@ export const ItemQuantitySelector = () => {
         handleResetQuantity={handleResetQuantity}
       />
     </div>
+    
   );
 };

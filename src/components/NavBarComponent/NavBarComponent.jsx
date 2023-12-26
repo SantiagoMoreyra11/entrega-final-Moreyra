@@ -5,8 +5,6 @@ import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import CartWidgetComponent from "../CartWidgetComponent/CartWidgetComponent";
 import { Link } from "react-router-dom";
-import CartPopup from "../CartPopup/CartPopup";
-import Cart from "../Cart/Cart";
 
 export const NavBarComponent = () => {
   return (
@@ -23,12 +21,6 @@ export const NavBarComponent = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Link
-              style={{ textDecoration: "none", color: "Black", margin: "10px" }}
-              to="/"
-            >
-              Home
-            </Link>
             <Link
               style={{ textDecoration: "none", color: "Black", margin: "10px" }}
               to="#link"
@@ -55,7 +47,6 @@ export const NavBarComponent = () => {
             </NavDropdown>
           </Nav>
           <CartWidgetComponent />
-          <CartPopup />
         </Navbar.Collapse>
       </Container>
     </Navbar>
